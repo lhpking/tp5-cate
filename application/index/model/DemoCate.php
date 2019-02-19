@@ -5,7 +5,7 @@ class DemoCate extends Model
 {
    public function cate(){
        $cate = $this->select(); //model查询
-       return $this->sort($cate); //将查询到的数据排序并且返回给index控制器一个数组对象
+       return $this->sort($cate); //将查询到的数据排序并且返回给sort控制器
    }
 
    public function sort($data,$pid=0,$level=0){
